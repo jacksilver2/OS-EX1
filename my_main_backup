@@ -1,7 +1,7 @@
 #include <iostream>
 #include <sys/time.h>
 #include "osm.h"
-
+#include "osm.cpp"
 
 int main(unsigned int iterations)
 {
@@ -12,7 +12,7 @@ int main(unsigned int iterations)
 	//test it again yo!
 	printf("%.6lf nano-seconds elapsed\n", osm_action_time(1000000000, 0));
 	printf("%.6lf nano-seconds elapsed\n", osm_action_time(1000000000,1));
-	printf("%.6lf nano-seconds elapsed\n", osm_action_time(1000,2));
+	printf("%.6lf nano-seconds elapsed\n", osm_action_time(1000000,2));
 
 	return 0;
 }

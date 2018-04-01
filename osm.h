@@ -7,7 +7,7 @@
         "a" (0xffffffff) /* no such syscall */, "b" (0), "c" (0), "d" (0) /*:\
         "eax", "ebx", "ecx", "edx"*/)
 
-
+double osm_action_time(unsigned int iterations, int action);
 /* Initialization function that the user must call
  * before running any other library function.
  * The function may, for example, allocate memory or
